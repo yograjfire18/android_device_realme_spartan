@@ -13,4 +13,8 @@
 
     <!-- Margin on the bottom of the charging indicator on Keyguard -->
     <dimen name="keyguard_indication_margin_bottom">3dp</dimen>
+
+    <!-- Whether show refresh rate QS tile -->
+    <bool name="config_showRefreshRateQsTile">true</bool>
+
 </resources>
