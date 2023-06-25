@@ -1016,7 +1016,9 @@ vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
 
 # Osense
+odm/lib64/libosenseaidlhalclient.so
 odm/lib64/libosensehalclient.so
+odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
 
 # Peripheral manager
