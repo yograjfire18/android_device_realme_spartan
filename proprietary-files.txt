@@ -457,6 +457,17 @@ vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # Charger firmware
+odm/firmware/fastchg/19705/oplus_vooc_fw.bin
+odm/firmware/fastchg/19795/oplus_vooc_fw.bin
+odm/firmware/fastchg/20607/oplus_vooc_fw.bin
+odm/firmware/fastchg/21615/charging_thermal_config_default.txt
+odm/firmware/fastchg/21615/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21619/charging_thermal_config_default.txt
+odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21623/charging_thermal_config_default.txt
+odm/firmware/fastchg/21623/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21732/charging_thermal_config_default.txt
+odm/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/21733/charging_thermal_config_default.txt
 odm/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/charging_thermal_config_default.txt
