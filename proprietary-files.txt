@@ -304,6 +304,7 @@ vendor/lib64/libcvp_common.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/libextcamera_client.so
 vendor/lib64/libface3d_dev.so
+vendor/lib/libgui1_vendor.so
 vendor/lib64/libmidasserviceintf.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
