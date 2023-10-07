@@ -81,6 +81,9 @@ function blob_fixup() {
         vendor/lib/libgui1_vendor.so)
             "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
+        odm/lib64/libwvhidl.so | odm/lib64/mediadrm/libwvdrmengine.so)
+            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
+            ;;
     esac
 }
 
