@@ -458,6 +458,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
+# Viper
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
 # VNDK
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
 
