@@ -17,7 +17,7 @@ service secureelement-hal_1_2 /odm/bin/hw/vendor.qti.secure_element@1.2-service
     group system
     disabled
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc_snxxx@1.2-service
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     override
     class hal
     user nfc
