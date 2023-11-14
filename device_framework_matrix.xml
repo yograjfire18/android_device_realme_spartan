@@ -15,9 +15,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>vendor.nxp.nxpnfc</name>
-        <version>2.0</version>
+        <version>1</version>
         <interface>
             <name>INxpNfc</name>
             <instance>default</instance>
@@ -225,9 +225,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.nfc</name>
-        <version>1.0</version>
+        <version>1</version>
         <interface>
             <name>IOplusNfc</name>
             <instance>default</instance>
