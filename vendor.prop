@@ -125,13 +125,6 @@ ro.bluetooth.a2dp_offload.supported=true
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=hastings
 
-# Camera
-#Expose aux camera for below packages
-vendor.camera.aux.packagelist="android,com.oneplus.camera,com.oppo.camera,com.oplus.camera,org.codeaurora.snapcam"
-#Whitelist below packages in privapp
-persist.vendor.camera.privapp.list="com.oneplus.camera,com.oppo.camera,com.oplus.camera,org.codeaurora.snapcam"
-persist.camera.privapp.list="com.oneplus.camera,com.oppo.camera,com.oplus.camera,org.codeaurora.snapcam"
-
 # Chipset
 ro.soc.manufacturer=QTI
 ro.soc.model=SM8250
