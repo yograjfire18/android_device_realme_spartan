@@ -124,9 +124,6 @@ on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,none,adb && pro
     write /config/usb_gadget/g1/idVendor 0x22D9
     write /config/usb_gadget/g1/idProduct 0x2766
 
-on property:sys.boot_completed=1
-    write /proc/touchpanel/double_tap_enable 1
-
 service oplus-sh /odm/bin/init.oplus.sh
     user root
     group root
