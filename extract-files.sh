@@ -87,6 +87,9 @@ function blob_fixup() {
         odm/lib64/libwvhidl.so | odm/lib64/mediadrm/libwvdrmengine.so | vendor/bin/sensors.qti | vendor/lib64/libsensorcal.so | vendor/lib64/libssc.so | vendor/lib64/sensors.ssc.so | vendor/lib64/libsnsdiaglog.so | vendor/lib64/libsnsapi.so | odm/lib64/libdmtpclient.so | odm/lib64/lib-virtual-modem-protos.so | odm/lib64/libdmtp-protos-lite.so | odm/lib64/libdmtp.so | odm/lib64/liboplus_service.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
+        odm/lib/libdlbdsservice_v3_6.so | odm/lib/libstagefright_soft_ddpdec.so | odm/lib/libstagefrightdolby.so | odm/lib64/libdlbdsservice_v3_6.so)
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+            ;;
     esac
 }
 
