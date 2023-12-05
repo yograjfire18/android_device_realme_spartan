@@ -68,6 +68,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q libshims_fingerprint.oplus.so "${2}" || "${PATCHELF}" --add-needed libshims_fingerprint.oplus.so "${2}"
             ;;
+        odm/etc/dolby/multimedia_dolby_dax_default.xml)
+            [ "$2" = "" ] && return 0
+            sed -i "/volume-leveler-enable/ s/true/false/g" "${2}"
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             [ "$2" = "" ] && return 0
             sed -i "s/\/my_product/\/product/" "${2}"
