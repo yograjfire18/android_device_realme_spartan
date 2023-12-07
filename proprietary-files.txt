@@ -1052,7 +1052,6 @@ odm/etc/dolby/multimedia_dolby_dax_default.xml|583f5c8c2bc9929c712166fa56abe3c8b
 odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc|5da96cf855061860f27dff6399505f8d1f1daeee
 odm/etc/media_codecs_dolby_audio.xml:vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
 odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml|c4704e5bc4da7cdf291c79389f379c8355eaf730
-odm/etc/audio_effects.xml|d8499efc929cd9e6cbb367a2820cea94b93f8ea0
 odm/lib/libstagefright_soft_ac4dec_v3_6.so:odm/lib/libstagefright_soft_ac4dec.so|db0fa99ece32e733f624fb99d4ea5c1e67d1e554
 odm/lib/libstagefright_soft_ddpdec_v3_6.so:odm/lib/libstagefright_soft_ddpdec.so|893c61e2e39f977406e4c7a6214838fd4fe3eceb
 odm/lib/soundfx/libhwdap_v3_6.so|1992eea271d67bef7482377605a2efa4c2f6dba8
