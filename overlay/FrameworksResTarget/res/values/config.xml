@@ -80,4 +80,8 @@
           <item>com.oppo.camera</item>
           <item>org.derpfest.flash</item>
      </string-array>
+
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
 </resources>
