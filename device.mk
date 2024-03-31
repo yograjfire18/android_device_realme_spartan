@@ -410,6 +410,10 @@ PRODUCT_COPY_FILES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Sensors
+PRODUCT_PACKAGES += \
+    vendor.lineage.oplus_als.service
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
