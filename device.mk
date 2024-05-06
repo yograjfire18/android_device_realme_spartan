@@ -374,6 +374,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
 
+# QCOM Components
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
