@@ -114,6 +114,9 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti.recovery \
     android.hardware.boot@1.1-service
 
+#OplusCam
+$(call inherit-product, vendor/oplus/camera/opluscamera.mk)
+
 # Camera
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim

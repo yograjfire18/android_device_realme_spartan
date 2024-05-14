@@ -13,6 +13,7 @@ $(call inherit-product, device/realme/spartan/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/gms/gms_mini.mk)
 
 PRODUCT_NAME := lineage_spartan
 PRODUCT_DEVICE := spartan
