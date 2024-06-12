@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
+TARGET_BOARD_PLATFORM := kona
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
     libssrec \
     libvolumelistener
 
-AUDIO_HAL_DIR := hardware/qcom-caf/sm8250/audio
+AUDIO_HAL_DIR := vendor/qcom/opensource/audio-hal/primary-hal
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/odm,$(TARGET_COPY_OUT_ODM)/etc) \
@@ -363,6 +363,10 @@ PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti.vendor
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 # RemovePackages
 PRODUCT_PACKAGES += \
