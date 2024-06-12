@@ -93,7 +93,8 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/device_framework_matrix.xml
+    $(DEVICE_PATH)/device_framework_matrix.xml \
+    vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest_odm.xml
@@ -118,7 +119,8 @@ BOARD_KERNEL_CMDLINE := \
     msm_rtb.filter=0x237 \
     reboot=panic_warm \
     service_locator.enable=1 \
-    swiotlb=2048
+    swiotlb=2048 \
+    androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -182,9 +184,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security
 VENDOR_SECURITY_PATCH := 2023-11-05
-
-# SEPolicy
-include hardware/oplus/sepolicy/qti/SEPolicy.mk
 
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
