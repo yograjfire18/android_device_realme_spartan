@@ -505,5 +505,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Missing vendor packages
+PRODUCT_PACKAGES += \
+    libpng.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor \
+    libutilscallstack.vendor \
+    libdumpstateutil.vendor \
+    libcurl.vendor
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/realme/spartan/spartan-vendor.mk)
