@@ -134,6 +134,7 @@ PRODUCT_PACKAGES += \
     gralloc.kona \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
+    libgui_vendor \
     libqdMetaData \
     libqdMetaData.system \
     libsdmcore \
