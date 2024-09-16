@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/spartan/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-PRODUCT_NAME := yaap_spartan
+PRODUCT_NAME := derp_spartan
 PRODUCT_DEVICE := spartan
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -32,11 +32,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := realme/RMX3371/RE54E4L1:14/UP1A.230620.001/S.14bef93_5a18-26df2:user/release-keys
 
-#YAAP
-TARGET_BUILD_GAPPS := true
-TARGET_ENABLE_BLUR := true
-TARGET_SUPPORTS_64_BIT_APPS := true
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-SYSTEM_OPTIMIZE_JAVA := true
-SYSTEMUI_OPTIMIZE_JAVA := true
-FULL_SYSTEM_OPTIMIZE_JAVA := true
+DERP_BUILDTYPE := Official
+EXTRA_UDFPS_ICONS := true

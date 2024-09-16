@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_spartan.mk
+    $(LOCAL_DIR)/derp_spartan.mk
 
 COMMON_LUNCH_CHOICES := \
-    yaap_spartan-user \
-    yaap_spartan-userdebug \
-    yaap_spartan-eng
+    derp_spartan-user \
+    derp_spartan-userdebug \
+    derp_spartan-eng
