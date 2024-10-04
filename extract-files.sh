@@ -55,7 +55,11 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl.xml)
+            sed -i "s/IFingerprint\/default/IFingerprint\/oplus/" "${2}"
+            ;;
         odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service)
+            sed -i "s/\/default/\/oplus\x00\x00/" "${2}"
             grep -q libshims_fingerprint.oplus.so "${2}" || "${PATCHELF}" --add-needed libshims_fingerprint.oplus.so "${2}"
             ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
