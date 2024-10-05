@@ -1,13 +1,7 @@
 <compatibility-matrix version="4.0" type="framework">
-    <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>android.hardware.biometrics.fingerprint</name>
-        <interface>
-            <name>IBiometricsFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.oplus.hardware.biometrics.fingerprint</name>
+        <version>2.3</version>
         <interface>
             <name>IBiometricsFingerprint</name>
             <instance>default</instance>
