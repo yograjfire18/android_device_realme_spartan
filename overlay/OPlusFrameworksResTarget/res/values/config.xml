@@ -517,6 +517,10 @@
     <!-- Paths to realme's vooc charging status file -->
     <string name="config_VoocChargerStatusPaths" translatable="false">/sys/class/oplus_chg/battery/voocchg_ing</string>
 
+    <!-- Whether device implements proximity sensor based checks to prevent
+         accidental unlocks when the screen is off. -->
+    <bool name="config_proximityCheckOnFpsUnlock">true</bool>
+
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false" >
         <item>540</item>  <!-- <item>sensorLocationX</item> -->
