@@ -123,6 +123,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
+# Dialer
+PRODUCT_PACKAGES += Dialer
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk.vendor \

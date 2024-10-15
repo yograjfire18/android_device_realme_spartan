@@ -19,6 +19,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     ConnMO \
     DCMO \
     DMService \
+    GoogleDialer \
     GoogleFeedback \
     grilservice \
     HealthIntelligenceStubPrebuilt \
