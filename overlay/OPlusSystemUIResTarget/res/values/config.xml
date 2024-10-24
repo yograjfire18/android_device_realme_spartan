@@ -5,42 +5,6 @@
 -->
 <resources>
 
-    <!-- Whether to enable framework dimming for UDFPS -->
-    <bool name="config_udfpsFrameworkDimming">true</bool>
-
-    <!-- Array of brightness-alpha LUT for framework dimming -->
-    <string-array name="config_udfpsDimmingBrightnessAlphaArray" translatable="false">
-          <item>0,255</item>
-          <item>39,238</item>
-          <item>250,232</item>
-          <item>290,229</item>
-          <item>355,225</item>
-          <item>519,214</item>
-          <item>560,211</item>
-          <item>595,209</item>
-          <item>713,200</item>
-          <item>805,194</item>
-          <item>859,191</item>
-          <item>1124,173</item>
-          <item>1259,163</item>
-          <item>1346,158</item>
-          <item>1447,151</item>
-          <item>1674,133</item>
-          <item>1797,123</item>
-          <item>1983,108</item>
-          <item>2149,98</item>
-          <item>2345,84</item>
-          <item>2500,72</item>
-          <item>2651,61</item>
-          <item>2803,50</item>
-          <item>2938,41</item>
-          <item>3027,34</item>
-          <item>3115,27</item>
-          <item>3256,19</item>
-          <item>3331,15</item>
-          <item>4095,0</item>
-    </string-array>
-
     <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
     <bool name="config_roundedCornerMultipleRadius">true</bool>
 
