@@ -125,7 +125,7 @@ odm/lib64/libarcsoft_dualcam_refocus_left.so;DISABLE_CHECKELF|9cdbd0d949910ef25c
 odm/lib64/libarcsoft_dualcam_refocus_preview.so;DISABLE_CHECKELF|4e52ec0d24007757fad40e72dc356b065218bd1d
 odm/lib64/libarcsoft_dualcam_refocus_uw.so;DISABLE_CHECKELF|b6887871bf79c813631a1f985cf29ede9587f8e6
 
-# Camera (All)
+# Camera
 odm/bin/vl53l1_daemon_main
 odm/lib/libaiboost_hexagon.so;DISABLE_CHECKELF
 odm/lib/libaiboost_nnlib_sr.so
@@ -355,7 +355,7 @@ vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.extcamera@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|c47e94efa891cf09dd4f20ea0d271ac615f0ee8d
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera (components)
 odm/lib64/camera/components/com.oplus.node.aiaftrack.so
