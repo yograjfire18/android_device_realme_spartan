@@ -47,9 +47,12 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.imsrtpservice@3.0',
     ): lib_fixup_vendor_suffix,
     (
+        'android.hardware.graphics.common-V1-ndk_platform',
         'libgpu_tonemapper',
         'libgrallocutils',
         'libOmxCore',
+        'libril',
+        'libvppclient',
         'libwpa_client',
     ): lib_fixup_remove,
 }
@@ -76,6 +79,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libui.so', 'libui-v30.so'),
     ('vendor/lib/libstagefright_soft_ac4dec.so', 'vendor/lib/libstagefright_soft_ddpdec.so', 'vendor/lib/libstagefrightdolby.so', 'vendor/lib64/libdlbdsservice.so', 'vendor/lib64/libstagefright_soft_ac4dec.so', 'vendor/lib64/libstagefright_soft_ddpdec.so', 'vendor/lib64/libstagefrightdolby.so', 'vendor/lib/libstagefright_soft_qtiflacdec.so', 'odm/lib/libdlbdsservice_v3_6.so', 'odm/lib/libstagefright_soft_ddpdec.so', 'odm/lib/libstagefrightdolby.so', 'odm/lib64/libdlbdsservice_v3_6.so'): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
+    ('odm/lib64/libCOppLceTonemapAPI.so', 'odm/lib64/libYTCommon.so', 'odm/lib64/libaps_frame_registration.so'): blob_fixup()
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/libnfc-nxp.conf': blob_fixup()

@@ -103,13 +103,14 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libcamera_metadata_shim
-
-PRODUCT_PACKAGES += \
+    android.frameworks.stats@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
+    libcamera_metadata_shim \
+    libstdc++_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
-    android.frameworks.stats@1.0.vendor
+    vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.vendor \
+    vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
