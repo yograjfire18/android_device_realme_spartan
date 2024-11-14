@@ -108,6 +108,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera_metadata_shim \
     libstdc++_vendor \
+    libutils.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.vendor \
     vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.vendor
