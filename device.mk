@@ -506,12 +506,13 @@ PRODUCT_BOOT_JARS += \
 
 # Missing vendor packages
 PRODUCT_PACKAGES += \
-    libpng.vendor \
-    libjsoncpp.vendor \
-    libsqlite.vendor \
-    libutilscallstack.vendor \
+    libcurl.vendor \
     libdumpstateutil.vendor \
-    libcurl.vendor
+    libjsoncpp.vendor \
+    libpng.vendor \
+    libsqlite.vendor \
+    libutils.vendor \
+    libutilscallstack.vendor
 
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
