@@ -1491,9 +1491,10 @@ vendor/lib64/vendor.qti.hardware.vpp@1.4.so
 odm/bin/hw/android.hardware.drm@1.3-service.widevine
 odm/etc/init/android.hardware.drm@1.3-service.widevine.rc
 odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+odm/lib/mediadrm/libwvdrmengine.so;DISABLE_CHECKELF
 odm/lib64/liboemcrypto.so
 odm/lib64/libwvhidl.so
-odm/lib64/mediadrm/libwvdrmengine.so
+odm/lib64/mediadrm/libwvdrmengine.so;DISABLE_CHECKELF
 vendor/lib64/libtrustedapploader.so
 
 # WiFi
@@ -1513,7 +1514,7 @@ system_ext/etc/wfdconfigsink.xml
 system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 system_ext/lib/libmmrtpdecoder.so
 system_ext/lib/libmmrtpencoder.so
-system_ext/lib/libwfdavenhancements.so
+system_ext/lib/libwfdavenhancements.so;DISABLE_CHECKELF
 system_ext/lib/libwfdclient.so
 system_ext/lib/libwfdcommonutils.so
 system_ext/lib/libwfdconfigutils.so
@@ -1533,6 +1534,7 @@ system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 system_ext/lib64/libmmparser_lite.so
 system_ext/lib64/libmmrtpdecoder.so
 system_ext/lib64/libmmrtpencoder.so
+system_ext/lib64/libwfdavenhancements.so;DISABLE_CHECKELF
 system_ext/lib64/libwfdclient.so
 system_ext/lib64/libwfdcommonutils.so
 system_ext/lib64/libwfdconfigutils.so
