@@ -126,7 +126,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libui.so', 'libui-v30.so'),
     ('odm/lib64/libCOppLceTonemapAPI.so', 'odm/lib64/libYTCommon.so', 'odm/lib64/libaps_frame_registration.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    ('odm/lib/mediadrm/libwvdrmengine.so', 'odm/lib64/mediadrm/libwvdrmengine.so', 'system_ext/lib/libwfdavenhancements.so', 'system_ext/lib64/libwfdavenhancements.so'): blob_fixup()
+    ('odm/lib/mediadrm/libwvdrmengine.so', 'odm/lib64/mediadrm/libwvdrmengine.so', 'system_ext/lib/libwfdavenhancements.so', 'system_ext/lib64/libwfdavenhancements.so', 'odm/lib/libdlbdsservice_v3_6.so', 'odm/lib/libstagefright_soft_ac4dec.so', 'odm/lib/libstagefright_soft_ddpdec.so', 'odm/lib/libstagefrightdolby.so', 'odm/lib64/libdlbdsservice_v3_6.so'): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
@@ -135,6 +135,10 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
         .regex_replace('IGNORED_IRQ=27,23,38$', 'IGNORED_IRQ=27,23,38,115,332'),
+    'vendor/etc/media_codecs_vendor_audio.xml': blob_fixup()
+        .regex_replace('(</Decoders>)', '\\1\n    <Include href="media_codecs_dolby_audio.xml" />'),
+    'odm/etc/dolby/multimedia_dolby_dax_default.xml': blob_fixup()
+        .regex_replace('(volume-leveler-enable value=")true', '\\1false'),
     'vendor/lib64/hw/com.qti.chi.override.so': blob_fixup()
         .add_needed('libcamera_metadata_shim.so')
         .binary_regex_replace(b'com.oem.autotest', b'\x00om.oem.autotest'),
