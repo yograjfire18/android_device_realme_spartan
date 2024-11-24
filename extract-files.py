@@ -126,7 +126,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libui.so', 'libui-v30.so'),
     ('odm/lib64/libCOppLceTonemapAPI.so', 'odm/lib64/libYTCommon.so', 'odm/lib64/libaps_frame_registration.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    ('odm/lib/mediadrm/libwvdrmengine.so', 'odm/lib64/mediadrm/libwvdrmengine.so', 'system_ext/lib/libwfdavenhancements.so', 'system_ext/lib64/libwfdavenhancements.so'): blob_fixup()
+    ('odm/lib/mediadrm/libwvdrmengine.so', 'odm/lib64/mediadrm/libwvdrmengine.so', 'system_ext/lib/libwfdavenhancements.so', 'system_ext/lib64/libwfdavenhancements.so', 'vendor/lib/libstagefright_soft_ac4dec.so', 'vendor/lib/libstagefright_soft_ddpdec.so', 'vendor/lib/libstagefrightdolby.so', 'vendor/lib64/libdlbdsservice.so', 'vendor/lib64/libstagefright_soft_ac4dec.so', 'vendor/lib64/libstagefright_soft_ddpdec.so', 'vendor/lib64/libstagefrightdolby.so'): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'vendor/etc/libnfc-nci.conf': blob_fixup()
         .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
